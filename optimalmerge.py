@@ -23,5 +23,5 @@ def optimized_cost(weights):
     return sum(temp)
 
 if __name__ == "__main__":
-    weights=list(map(int,input("Enter Sizes with spaces : ").split()))
+    weights=list(map(int,input("Enter Sizes with spaces : ").strip().split()))
     print("\nCost is",optimized_cost(weights))
